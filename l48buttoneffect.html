@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rotating Button Effect</title>
+	<style type="text/css">
+		body
+		{
+			font-family: sans-serif;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: skyblue;
+		}
+		a
+		{
+			text-decoration: none;
+			color:#272727;
+			font-size: 50px;
+			border:5px solid black;
+			padding: 40px 80px;
+			position: relative;
+			overflow: hidden;
+		}
+		a::before
+		{
+			content:'';
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index:-1;
+			transform: rotate(-90deg);
+			transform-origin: left top;
+			background-color: yellow;
+
+			/*transform: rotate(90deg);
+			transform-origin: left top;
+			background-color: pink;*/
+
+		/*	transform: rotate(-90deg);
+			transform-origin: right top;
+			background-color: tomato;
+*/
+			/*transform: rotate(90deg);
+			transform-origin: right top;
+			background-color: red;
+*/
+			transition: transform 3s;
+		}
+
+		a:hover::before
+		{
+			transform: rotate(0deg);
+		}
+	</style>
+</head>
+<body>
+	<a href="#">Hover Me</a>
+
+</body>
+</html>

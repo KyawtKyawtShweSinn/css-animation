@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call Button Effect</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		body
+		{
+			font-family: sans-serif;
+			height: 100vh;
+			background-color: #262626;
+
+			margin: 0;
+			overflow: hidden;
+
+			display: flex;
+			justify-content: center;
+			align-items:center;
+		}
+
+		.ringing
+		{
+			width:100px;
+			height:100px;
+			color:#fff;
+			background-color:lawngreen;
+			font-size: 48px;
+			text-align: center;
+			line-height: 100px;
+
+			border-radius: 50%;
+			position: relative;
+		}
+
+		.ringing::before,
+		.ringing::after
+		{
+			content:'';
+			border:3px solid lawngreen;
+			border-radius: 50%;
+
+			position: absolute;
+			top: -20px;
+			left: -20px;
+			bottom: -20px;
+			right: -20px;
+
+			animation-name: myani;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		.ringing::after
+			{
+				animation-delay: 0.5s;
+			}
+
+		@keyframes myani
+		{
+			0%
+			{
+				opacity:0;
+				transform: scale(0.5);
+
+			}
+
+			50%
+			{
+				opacity: 1;
+				transform: scale(1);
+			}
+
+			100%
+			{
+				opacity: 0;
+				transform: scale(1.2);
+			}
+		}
+</style>
+</head>
+<body>
+<div class="ringing"><i class="fas fa-phone"></i></div>
+</body>
+</html>
