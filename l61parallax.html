@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+	<title>Parallax Website</title>
+	<style>
+		html,body {
+			font-family: 'Padauk', sans-serif;
+			font-family: "Sofia", sans-serif;
+			box-sizing: border-box;
+			margin: 0;
+		}
+
+		.div1 {	
+			width:1400px;
+			height: 800px;
+			box-sizing: border-box;
+			background: url(./img/41.jpg);
+			opacity: 0.5;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+		}
+
+		.div1 .insidediv1 {
+			width: 275px;
+			height: 70px;
+			background-color: black;
+			position: absolute;
+			z-index: 1;
+		}
+
+		.insidediv1 p {
+			color: white;
+			font-weight: 70%;
+			font-size: 15px;
+			letter-spacing: 5px;
+			position: absolute;
+			bottom: 5px;
+			left:65px;
+			z-index: 2
+		}
+
+		.div2 {
+			width: 1400px;
+			height: 420px;
+			margin:0;
+			background-color: white;
+			color:grey;
+			box-sizing: border-box;
+		}
+
+		.insidediv2 {
+			box-sizing: border-box;
+			padding: 50px;
+		}
+
+		.insidediv2 h1 {
+			text-align: center;
+			letter-spacing: 5px;
+			color: black;
+		}
+
+		.insidediv2 p {
+			text-align: justify;
+			font-size: 17px;
+			font-weight: 30%
+		}
+
+		.div3 {
+			width:1400px;
+			height: 400px;
+			box-sizing: border-box;
+			background: url(./img/43.jpeg);
+			opacity: 0.5;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+		}
+
+		.insidediv3 {
+			letter-spacing: 5px;
+			font-weight: 100%;
+			font-size: 30px;
+			color:black;
+		}
+
+		.div3-tokyo {
+			width: 1400px;
+			height: 200px;
+			margin:0 auto;
+			background-color: black;
+			color:black;
+			box-sizing: border-box;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+		.insidediv3tokyo p {
+			font-family: "Sofia", sans-serif;
+
+			font-size: 27px;
+			font-weight: 100%;
+			text-shadow: 1px 1px 1px rgba(30, 30, 29, 0.95);
+			position: absolute;
+			top:40px;
+			left:300px;
+			z-index: 1;
+		}
+
+		.div3-slide1 {
+			width:1400px;
+			height: 600px;
+			box-sizing: border-box;
+			background: url(./img/67.jpg);
+			opacity: 0.5;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+		}
+
+		.insidediv3slide1 {
+			letter-spacing: 5px;
+			font-weight: 100%;
+			font-size: 30px;
+			color:black;
+		}
+
+		.div4 {
+			width: 1400px;
+			height: 200px;
+			margin:0 auto;
+			background-color: black;
+			color:black;
+			box-sizing: border-box;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+		.insidediv4 p {
+			font-family: "Sofia", sans-serif;
+			font-size: 27px;
+			font-weight: 100%;
+			text-shadow: 1px 1px 1px rgba(30, 30, 29, 0.95);
+			position: absolute;
+			top:40px;
+			left:350px;
+			z-index: 1;
+		}
+
+		.div5 {
+			width:1400px;
+			height: 700px;
+			box-sizing: border-box;
+			background: url(./img/62.jpg);
+			opacity: 0.5;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+		}
+
+		.insidediv5 {	
+			text-shadow: 1px 1px 1px rgba(30, 30, 29, 0.95);
+			letter-spacing: 5px;
+			font-weight: 100%;
+			font-size: 30px;
+			color:black;
+		}
+
+		.div6 {
+			width: 1400px;
+			height: 420px;
+			margin:0;
+			background-color: white;
+			color:grey;
+			box-sizing: border-box;
+		}
+
+		.insidediv6 {
+			box-sizing: border-box;
+			padding: 50px;
+		}
+
+		.insidediv6 h1 {
+			font-family: "Sofia", sans-serif;
+			text-shadow: 1px 1px 1px rgba(30, 30, 29, 0.95);
+			text-align: center;
+			letter-spacing: 5px;
+			color: black;
+		}
+
+		.insidediv6 p {
+			text-align: justify;
+			font-size: 17px;
+			font-weight: 30%
+		}
+
+		.div7 {
+			width:1400px;
+			height: 600px;
+			box-sizing: border-box;
+			background: url(./img/64.jpg);
+			opacity: 0.5;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+		}
+
+		.insidediv7 {
+			letter-spacing: 5px;
+			font-weight: 100%;
+			font-size: 30px;
+			color:black;
+		}
+
+		.div8 {
+			width:1400px;
+			height: 600px;
+			box-sizing: border-box;
+			background: url(./img/60.jpg);
+			opacity: 0.5;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+		}
+
+		.insidediv8 {
+			letter-spacing: 5px;
+			font-weight: 100%;
+			font-size: 30px;
+			color:rgba(132, 24, 106, 0.9);
+			text-shadow: 1px 1px 1px rgba(30, 30, 29, 0.95);
+		}
+
+		.div9 {
+			width:1400px;
+			height: 600px;
+			box-sizing: border-box;
+			background: url(./img/65.jpg);
+			opacity: 0.5;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin: 0;
+		}
+
+		.div9 .insidediv9 {
+			width: 275px;
+			height: 70px;
+			background-color: black;
+			position: absolute;
+			z-index: 1;
+		}
+
+		.insidediv9 p {
+			color: white;
+			font-weight: 70%;
+			font-size: 15px;
+			letter-spacing: 5px;
+			position: absolute;
+			bottom: 5px;
+			left:70px;
+			z-index: 2
+		}
+	</style>
+</head>
+<body>
+<div class="div1">
+	<div class="insidediv1"><p>SCROLL DOWN</p></div>	
+</div>
+
+<div class="div2">
+	<div class="insidediv2">
+		<h1>TOKYO</h1>
+		<p>
+			Tokyo (/ˈtoʊkioʊ/ TOH-kee-oh, /-kjoʊ/ -⁠kyoh; Japanese: 東京, Tōkyō [toːkʲoː] (About this soundlisten)), officially the Tokyo Metropolis (Japanese: 東京都, Tōkyō-to), is the de facto capital[note 1][7] and most populous prefecture of Japan. Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japan's main island of Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government. As of 2021, the prefecture has an estimated population of 13,960,236.[4] The Greater Tokyo Area is the most populous metropolitan area in the world, with more than 37.393 million residents as of 2020.Tokyo was originally known as Edo (江戸), a kanji compound of 江 (e, "cove, inlet") and 戸 (to, "entrance, gate, door").[13] The name, which can be translated as "estuary", is a reference to the original settlement's location at the meeting of the Sumida River and Tokyo Bay. During the Meiji Restoration in 1868, the name of the city was changed to Tokyo (東京, from 東 tō "east", and 京 kyō "capital") when it became the new imperial capital,[14] in line with the East Asian tradition of including the word capital (京) in the name of the capital city (for example, Kyoto (京都), Keijō (京城), Beijing (北京), Nanjing (南京), and Xijing (西京)).[13] During the early Meiji period, the city was sometimes called "Tōkei", an alternative pronunciation for the same characters representing "Tokyo", making it a kanji homograph. Some surviving official English documents use the spelling "Tokei";[15] however, this pronunciation is now obsolete.
+		</p>
+	</div>
+</div>
+
+<div class="div3">
+	<div class="insidediv3">
+		<span>ALIVE CITY</span>
+	</div>
+</div>
+
+<div class="div3-tokyo">
+	<div class="insidediv3tokyo">
+		<p class="font-effect-emboss"> TOKYO nights are always FUN! Streets are always crowed with people.</p>>
+	</div>
+</div>
+
+<div class="div3-slide1">
+	<div class="insidediv3slide1">
+		<span class="font-effect-neon">BUSTLING</span>
+	</div>
+</div>
+
+
+
+<div class="div4">
+	<div class="insidediv4">
+		<p class="font-effect-emboss"> Bustling City or Beautiful City.Where do you wish to Go?</p>
+	</div>
+</div>
+
+<div class="div5">
+	<div class="insidediv5">
+		<span>SAKURA & TEMPLE</span>
+	</div>
+</div>
+
+<div class="div6">
+	<div class="insidediv6">
+		<h1>KYOTO</h1>
+		<p> Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses. It’s also known for formal traditions such as kaiseki dining, consisting of multiple courses of precise dishes, and geisha, female entertainers often found in the Gion district.Kyoto is considered the cultural capital of Japan and a major tourist destination. It is home to numerous Buddhist temples, Shinto shrines, palaces and gardens, some of which are listed collectively by UNESCO as a World Heritage Site. Prominent landmarks include the Kyoto Imperial Palace, Kiyomizu-dera, Kinkaku-ji, Ginkaku-ji and the Katsura Imperial Villa. Kyoto is also a center of higher learning, with Kyoto University being an institution of international renown.Kyoto sits atop a large natural water table that provides the city with ample freshwater wells. Due to large-scale urbanization, the amount of rain draining into the table is dwindling and wells across the area are drying at an increasing rate.The city suffered extensive destruction in the Ōnin War of 1467–1477, and did not really recover until the mid-16th century. During the Ōnin War, the shugo collapsed, and power was divided among the military families.[15] Battles between samurai factions spilled into the streets, and came to involve the court nobility (kuge) and religious factions as well. Nobles' mansions were transformed into fortresses, deep trenches dug throughout the city for defense and as firebreaks, and numerous buildings burned. The city has not seen such widespread destruction since.</p>
+	</div>
+</div>
+
+<div class="div7">
+	<div class="insidediv7">
+		<span>SAKURA CITY</span>
+	</div>
+</div>
+
+
+<div class="div8">
+	<div class="insidediv8">
+		<span>BEAUTIFUL</span>
+	</div>
+</div>
+
+<div class="div9">
+	<div class="insidediv9">
+		<p>SCROLL UP</p>
+	</div>
+</div>
+
+</body>
+</html>

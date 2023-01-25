@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>CSS Card Hover</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			font-size: 1.1em;
+			background-color:skyblue;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container {
+			position:relative;
+			width: 1100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding:100px 30px;
+		}
+
+		.container .card {
+			max-width: 300px;
+			height: 300px;
+			position: relative;
+			background-color: white;
+			padding: 20px 15px;
+			margin: 30px 10px;
+			display: flex;
+			flex-direction: column;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+			transition: 0.5s ease-in-out;
+		}
+
+		.container .card:hover {
+			height: 420px;
+		}
+
+		.container .card .imgbox {
+			position: relative;
+			width: 250px;
+			height:260px;
+			top: -60px;
+			left: 10px;
+			box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+			border-radius: 5px;
+			z-index: 1;
+		}
+
+		.container .card .imgbox img {
+			width: 250px;
+			height:260px;
+			border-radius: 5px;
+		}
+
+		.container .card .content {
+			position: relative;
+			margin-top: -140px;
+			padding: 10px 5px;
+			text-align:center;
+			color: #111;
+			visibility: hidden;
+			opacity: 0;
+			transition: 0.5s ease-in-out;
+		}
+
+		.container .card:hover .content {
+			visibility: visible;
+			opacity: 1;
+			margin-top: -60px;
+			transition-delay: 0.5s;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="card">
+		<div class="imgbox">
+			<img src="img/blue.jpg"/>
+		</div>
+		<div class="content">
+			<h1>Blue</h1>
+			<p>Forget-me-nots represent true love and giving someone this flower means you truly love and respect this person.</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="imgbox">
+			<img src="img/yellow1.jpg"/>
+		</div>
+		<div class="content">
+			<h1>Yellow</h1>
+			<p>Sunflowers represent everlasting and hopeful love.The symbolic sunflower meaning deals with beauty, delight, hope and joy.</p>
+		
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="imgbox">
+			<img src="img/purple2.jpg"/>
+		</div>
+		<div class="content">
+			<h1>Purple</h1>
+			<p>In the modern language of love, Lavender means "devotion and undying love." and known to represent silence, grace and calmness.</p>
+		
+		</div>
+	</div>
+
+</body>
+</html>
